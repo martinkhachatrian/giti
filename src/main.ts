@@ -11,7 +11,6 @@ export function setupCounter(element: HTMLElement) {
 
   const setCounter = (value: number) => {
     counter = adjustCounterValue(value);
-    //TIP WebStorm has lots of inspections to help you catch issues in your project. It also has quick fixes to help you resolve them. Press <shortcut actionId="ShowIntentionActions"/> on <shortcut raw="text"/> and choose <b>Inline variable</b> to clean up the redundant code.
     const text = `${counter}`;
     element.innerHTML = text;
   };
@@ -27,7 +26,4 @@ export function setupCounter(element: HTMLElement) {
   setCounter(0);
 }
 
-//TIP To find text strings in your project, you can use the <shortcut actionId="FindInPath"/> shortcut. Press it and type in <b>counter</b> – you’ll get all matches in one place.
 setupCounter(document.getElementById('counter-value') as HTMLElement);
-
-//TIP There's much more in WebStorm to help you be more productive. Press <shortcut actionId="Shift"/> <shortcut actionId="Shift"/> and search for <b>Learn WebStorm</b> to open our learning hub with more things for you to try.
